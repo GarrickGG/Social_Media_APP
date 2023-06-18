@@ -46,7 +46,7 @@ const MyPostWidget = ({ picturePath }) => {
       formData.append("picturePath", image.name);
     }
 
-    const response = await fetch(`http://social-media-backend.fly.dev/posts`, {
+    const response = await fetch(`https://social-media-backend.fly.dev/posts`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,
