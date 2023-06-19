@@ -13,7 +13,7 @@ const FriendListWidget = ({ userId }) => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `https://social-media-backend.fly.dev/${userId}/friends`,
+      `https://social-media-backend.fly.dev:6001/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
