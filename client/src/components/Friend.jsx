@@ -23,7 +23,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `https://social-media-backend.fly.dev/${_id}/${friendId}`,
+      `https://social-media-backend.fly.dev:6001/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {
