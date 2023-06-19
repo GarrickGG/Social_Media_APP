@@ -15,7 +15,7 @@ const ProfilePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
 
   const getUser = async () => {
-    const response = await fetch(`https://social-media-backend.fly.dev/${userId}`, {
+    const response = await fetch(`https://social-media-backend.fly.dev:6001/${userId}`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
