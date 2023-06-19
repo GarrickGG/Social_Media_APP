@@ -8,7 +8,7 @@ const UserImage = ({ image, size = "60px" }) => {
         width={size}
         height={size}
         alt="user"
-        src={`https://social-media-backend.fly.dev/assets/${image}`}
+        src={`https://social-media-backend.fly.dev:6001/assets/${image}`}
       />
     </Box>
   );
